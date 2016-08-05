@@ -11,7 +11,7 @@ Qubit Segments
 use QubitSegments;
 
 $propertyId = 4286; // Ask Qubit for your property Id
-$segmentId = "SG-3918-f06a1268"
+$segmentId = "SG-4286-f06a1268"
 $segments = new Segments($propertyId);
 $visitorId = QubitSegments\getVisitorIdFromCookie($_COOKIE["qb_permanent"]);
 $memberships = $segments->getSegmentMembershipsForVisitor($visitorId);

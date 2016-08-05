@@ -10,4 +10,7 @@ package:
 bootstrap:
 	@php composer.phar update
 
-.PHONY: test start-server stop-server package
+example:
+	@(cd ./example && php -S localhost:8000)
+
+.PHONY: test start-server stop-server package example

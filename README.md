@@ -26,6 +26,8 @@ $request->then(function ($memberships) {
 })
 ```
 
+Run `make example` to see a demo of it working.
+
 ## Installation
 
 The recommended way to install Qubit Segments is through [Composer](http://getcomposer.org).

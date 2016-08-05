@@ -1,6 +1,9 @@
 Qubit Segments
 ==============
 
+[![Build Status](https://travis-ci.org/QubitProducts/qubit-segments-php/QubitProducts/qubit-segments-php.svg?branch=master)](https://travis-ci.org/QubitProducts/qubit-segments-php/QubitProducts/qubit-segments-php)
+
+
 ## Usage
 
 ```php

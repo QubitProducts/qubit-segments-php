@@ -13,8 +13,8 @@
 <?php
   require __DIR__ . '/../vendor/autoload.php';
 
-  $segmentId = "SG-3918-f06a1268";
-  $client = new QubitSegments\Segments(3918);
+  $segmentId = "SG-4286-f06a1268";
+  $client = new QubitSegments\Segments(4286);
   $visitorId = QubitSegments\getVisitorIdFromCookie($_COOKIE["qb_permanent"]);
 
   $memberships = $client->getSegmentMembershipsForVisitor($visitorId);

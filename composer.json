@@ -1,0 +1,34 @@
+{
+    "name": "qubit/segments",
+    "type": "library",
+    "description": "Library for getting a visitors current segments",
+    "keywords": ["qubit", "segments"],
+    "homepage": "http://qubit.com/",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "James Hollingworth",
+            "homepage": "https://github.com/jhollingworth"
+        }
+    ],
+    "require": {
+        "php": ">=5.5",
+        "guzzlehttp/guzzle": "^6.2"
+    },
+    "require-dev": {
+        "ext-curl": "*",
+        "phpunit/phpunit": "^4.0",
+        "psr/log": "^1.0"
+    },
+    "autoload": {
+        "files": ["src/functions_include.php"],
+        "psr-4": {
+            "QubitSegments\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "QubitSegments\\Tests\\": "tests/"
+        }
+    }
+}

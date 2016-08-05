@@ -4,5 +4,9 @@ namespace QubitSegments;
 function getVisitorIdFromCookie($cookie) {
   preg_match("/([^:]+)/", $cookie, $matches);
 
-  return $matches[1];
+  if (sizeof($matches) === 2) {
+    return $matches[1];
+  }
+
+  return null;
 }

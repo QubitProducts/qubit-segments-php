@@ -10,7 +10,7 @@ Qubit Segments
 
 use QubitSegments;
 
-$propertyId = 4286; // Ask Qubit for your property Id
+$propertyId = 4286; // This is the 4 digit number on all app.qubit.com URLs, eg app.qubit.com/p/4286/segments 
 $segmentId = "SG-4286-f06a1268"
 $segments = new Segments($propertyId);
 $visitorId = QubitSegments\getVisitorIdFromCookie($_COOKIE["qb_permanent"]);

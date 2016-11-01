@@ -8,13 +8,13 @@ use GuzzleHttp\Exception\RequestException;
 class Segments {
   private $client;
   private $baseUrl;
-  private $propertyId;
+  private $trackingId;
   private $requestSettings;
 
-  function __construct ($propertyId) {
-    $this->propertyId = $propertyId;
+  function __construct ($trackingId) {
+    $this->trackingId = $trackingId;
     $this->client = new Client();
-    $this->baseUrl = "https://stash.qubitproducts.com/stash/v1.1/kv/get/$propertyId/public/current-memberships-";
+    $this->baseUrl = "https://stash.qubitproducts.com/stash/v1.1/kv/get/segments-$trackingId/public/segments-";
     $this->requestSettings = [
       'timeout' => 4
     ];

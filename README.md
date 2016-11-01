@@ -10,9 +10,9 @@ Qubit Segments
 
 use QubitSegments;
 
-$propertyId = 4286; // This is the 4 digit number on all app.qubit.com URLs, eg app.qubit.com/p/4286/segments 
+$trackingId = "retail_demo_union_fashion"; // This is the tracking id from your QProtocol events. Either ask your Qubit contact for details or look at the `meta.trackingId` value in your QP events.
 $segmentId = "SG-4286-f06a1268"
-$segments = new Segments($propertyId);
+$segments = new Segments($trackingId);
 $visitorId = QubitSegments\getVisitorIdFromCookie($_COOKIE["qb_permanent"]);
 $memberships = $segments->getSegmentMembershipsForVisitor($visitorId);
 

@@ -9,10 +9,6 @@ class SegmentMemberships {
   }
 
   public function isMemberOf ($segmentId) {
-    if (array_key_exists($segmentId, $this->segments)) {
-      return $this->segments[$segmentId] == true;
-    }
-
-    return false;
+    return in_array($segmentId, $this->segments);
   }
 }

@@ -14,7 +14,7 @@
   require __DIR__ . '/../vendor/autoload.php';
 
   $segmentId = "SG-4286-f06a1268";
-  $client = new QubitSegments\Segments(4286);
+  $client = new QubitSegments\Segments("retail_demo_union_fashion");
   $visitorId = QubitSegments\getVisitorIdFromCookie($_COOKIE["qb_permanent"]);
 
   $memberships = $client->getSegmentMembershipsForVisitor($visitorId);
